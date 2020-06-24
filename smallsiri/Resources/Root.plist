@@ -28,7 +28,7 @@
 			<key>default</key>
 			<string>top</string>
 			<key>defaults</key>
-			<string>com.muirey03.smallsiri</string>
+			<string>com.maskey.proSiri</string>
 			<key>key</key>
 			<string>fromTop</string>
 		</dict>
@@ -63,6 +63,6 @@
 
 	</array>
 	<key>title</key>
-	<string>SmallSiri</string>
+	<string>proSiri</string>
 </dict>
 </plist>
