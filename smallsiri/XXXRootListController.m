@@ -10,14 +10,10 @@
 	return _specifiers;
 }
 
--(void)openGithub
-{
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/Muirey03/SmallSiri"]];
-}
 
 -(void)openTwitter
 {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/Muirey03"]];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/DevMaskey"]];
 }
 
 @end
