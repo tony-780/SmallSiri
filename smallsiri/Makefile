@@ -1,10 +1,10 @@
 include $(THEOS)/makefiles/common.mk
 
-BUNDLE_NAME = smallsiri
-smallsiri_FILES = XXXRootListController.m
-smallsiri_INSTALL_PATH = /Library/PreferenceBundles
-smallsiri_FRAMEWORKS = UIKit
-smallsiri_PRIVATE_FRAMEWORKS = Preferences
+BUNDLE_NAME = ProSiri
+ProSiri_FILES = XXXRootListController.m
+ProSiri_INSTALL_PATH = /Library/PreferenceBundles
+ProSiri_FRAMEWORKS = UIKit
+ProSiri_PRIVATE_FRAMEWORKS = Preferences
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 
