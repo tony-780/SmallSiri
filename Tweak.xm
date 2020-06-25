@@ -6,13 +6,6 @@
 -(id)_viewControllerForAncestor;
 @end
 
-@interface SBAssistantWindow : UIWindow
--(void)didSwipeUp;
--(void)didSwipeDown;
--(void)expandSiriView;
--(void)closeSiriView;
-@end
-
 @interface UIStatusBar : UIView
 @property (nonatomic, retain) UIColor *foregroundColor;
 @end
@@ -45,8 +38,6 @@
 @end
 
 static CGFloat yChange = 0;
-static UISwipeGestureRecognizer* swipeUpGesture;
-static UISwipeGestureRecognizer* swipeDownGesture;
 static SiriUISiriStatusView* status;
 static SiriUIHelpButton* helpButton;
 static SUICFlamesView* flames;
@@ -152,9 +143,6 @@ static BOOL getPrefBool(NSString* key, BOOL fallback)
             self.subviews[0].layer.cornerRadius = 0;
             self.subviews[0].clipsToBounds = NO;
 
-            //rest help button position
-            helpButton.frame = CGRectMake(helpButton.frame.origin.x, helpButton.frame.origin.y + yChange, self.frame.size.width, helpButton.frame.size.height);
-
             //reset flames position
             flames.frame = CGRectMake(flames.frame.origin.x, flames.frame.origin.y + yChange, flames.frame.size.width, flames.frame.size.height);
 
@@ -169,17 +157,7 @@ static BOOL getPrefBool(NSString* key, BOOL fallback)
 }
 
 %new
--(void)didSwipeUp
-{
-    if (getPrefBool(@"fromTop", YES))
-    {
-        [self expandSiriView];
-    }
-    else
-    {
-        [self closeSiriView];
-    }
-}
+
 
 %new
 -(void)didSwipeDown
