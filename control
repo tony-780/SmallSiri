@@ -1,9 +1,9 @@
-Package: com.muirey03.smallsiri
-Name: SmallSiri
+Package: com.maskey.prosiri
+Name: ProSiri
 Depends: mobilesubstrate
 Version: 1.2.0
 Architecture: iphoneos-arm
-Description: Make siri smaller and unobtrusive!
-Maintainer: Muirey03
-Author: Muirey03
+Description: The Siri your old OS deserves
+Maintainer: Maskey
+Author: Maskey
 Section: Tweaks
